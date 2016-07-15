@@ -1,0 +1,202 @@
+body{
+	font: 12px/26px 'Microsoft Yahei',STHeiti,sans-Serif;
+}
+.none{
+	display: none;
+}
+.portrait,.portrait img{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.pages{
+	min-height: 640px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	padding: 40px;
+}
+#index{
+	padding: 10% 40px;
+}
+.links a{
+	display: inline-block;
+	margin: 2em;
+	font-size: 24px;
+	color: #666;
+	animation:updown 2s infinite linear;
+}
+.links a:nth-child(2n){
+	animation:updown 2s 1s infinite linear;
+}
+.links a:nth-child(2),.links a:nth-child(3){
+	position: relative;
+	top: 2em;
+}
+@keyframes updown{
+	0%{
+		transform:translateY(0);
+	}
+	50%{
+		transform:translateY(5px);
+	}
+	100%{
+		tranform:translateY(0);
+	}
+}
+
+h2{
+	margin-bottom: 2em;
+	font-size:30px;
+	color: #bd9867;
+	opacity: 0.7;
+
+}
+h2:first-letter{
+	font-size: 40px;
+	color: #927248;
+}
+#works{
+	background: #e7e7e7;
+}
+#works .imgwall{
+	width: 300px;
+	height:200px;
+	vertical-align: middle;
+}
+#works .imgwall img{
+	width: 300px;
+	height: 200px;
+}
+.imgwall{
+	display: inline-block;
+}
+#works .imgwall-phone{
+	width: 250px;
+	height:300px;
+	vertical-align: middle;
+}
+#works .imgwall-phone img{
+	width: 200px;
+	height: 300px;
+}
+figure{
+	position: relative;
+	cursor: pointer;
+}
+figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	display: none;
+}
+figure:hover figcaption{
+	display: block;
+}
+#works figcaption span{
+	margin-top: 20%;
+	display: block;
+}
+#works figcaption a{
+	color: #fff;
+	font-size: 16px;
+}
+#works figcaption>a{
+	border: 1px solid #fff;
+	padding: .5em 2em;
+	display: block;
+	margin: 1em 2em;
+}
+#works .imgwall:hover{
+	transform:translateY(3px);
+	transition:all .3s linear;
+}
+#works .imgwall-phone figcaption span{
+	margin-top: 40%;
+}
+#uis{
+	background: #e7e7e7;
+}
+#uis .ui a{
+	display: inline-block;
+	width:150px;
+	height: 150px;
+	margin: 40px;
+	border:5px solid #fff;
+	opacity: .8
+}
+#uis .ui a:hover{
+	transform: rotate(5deg);
+	transition:all .3s ease;
+	opacity: 1;
+}
+#uis .ui a:nth-child(2n):hover{
+	transform: rotate(-5deg);
+	transition:all .3s ease;
+}
+#uis .ui a:nth-child(1){
+	background: url(../images/ui/1.jpg) center;
+	background-size: cover;
+}
+
+#uis .ui a:nth-child(2){
+	background: url(../images/ui/4.jpg) center;
+	background-size: cover;
+}
+
+#uis .ui a:nth-child(3){
+	background: url(../images/ui/6.jpg) center;
+	background-size: cover;
+}
+#uis .ui a:nth-child(4){
+	background: url(../images/ui/7.jpg) center;
+	background-size: cover;
+}
+#uis .ui a:nth-child(5){
+	background: url(../images/ui/8.jpg) center;
+	background-size: cover;
+}
+#uis .ui a:nth-child(6){
+	background: url(../images/ui/9.jpg) center;
+	background-size: cover;
+}
+#uis .ui a:nth-child(7){
+	background: url(../images/ui/10.jpg) center;
+	background-size: cover;
+}
+#skills ul li{
+	font-size: 14px;
+	line-height: 3;
+	cursor: pointer;
+}
+#skills ul li:hover{
+	
+}
+#skills .strong{
+	font-weight: bold;
+}
+#skills .html5{
+	color: #e44c25
+}
+#skills .css3{
+	color: #3b9adc
+}
+#skills .img-html{
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom:20px;
+}
+#about ul li{
+	font-size: 14px;
+	line-height: 3;
+}
+#about .smile{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 40px;
+}
